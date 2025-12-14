@@ -275,4 +275,63 @@ export default function RelayLanding() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#pricing" className="text-slate-400 hover:text-white
+                  <Link href="#pricing" className="text-slate-400 hover:text-white transition text-sm">
+                    Pricing
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Company */}
+            <div>
+              <h4 className="font-bold text-sm uppercase tracking-wider mb-4">Company</h4>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="#contact" className="text-slate-400 hover:text-white transition text-sm">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h4 className="font-bold text-sm uppercase tracking-wider mb-4">Legal</h4>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/privacy" className="text-slate-400 hover:text-white transition text-sm">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/terms" className="text-slate-400 hover:text-white transition text-sm">
+                    Terms of Service
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h4 className="font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
+              <ul className="space-y-2 text-sm text-slate-400">
+                <li>support@relayanswering.com</li>
+                <li>
+                  1919 Queen Anne Ave N
+                  <br />
+                  Seattle, WA 98109
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-slate-800 pt-8">
+            <p className="text-sm text-slate-400 text-center">© 2025 Relay. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <TrialSignupDialog open={showTrialDialog} onOpenChange={setShowTrialDialog} />
+    </div>
+  )
+}
